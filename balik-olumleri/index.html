@@ -59,6 +59,9 @@
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <!-- Leaflet Hash -->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet-hash@0.2.1/leaflet-hash.min.js"></script>
+
 </head>
 
 <body>
@@ -73,6 +76,9 @@
       zoomControl: false,
       scrollWheelZoom: false
     }).setView([41.76,-72.69], 11); // default center is overridden by Google Sheet options and points
+
+    // Assuming your map instance is in a variable called map
+    var hash = new L.Hash(map);
   </script>
 
   <script type="text/javascript" src="google-doc-url.js"></script>
